@@ -5,6 +5,11 @@
   font-style: normal;
 }
 
+*{
+  background-color: black;
+}
+
+
 .nav-item{
   color:white;
   text-decoration: none;

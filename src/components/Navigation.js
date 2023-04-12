@@ -7,7 +7,7 @@ export default function Navigation() {
     <Navbar bg="dark" variant='dark' expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">
-          <img width={100} src='https://blog.kakaocdn.net/dn/c4jzIT/btrghQIPMkh/sByblE0p50HHtMiEDdn8k1/img.png'/>
+          <img width={100} src='/image/넷플릭스.png'/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

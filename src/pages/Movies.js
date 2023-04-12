@@ -1,7 +1,10 @@
 import React from 'react'
+import PageNation from '../components/PageNation'
 
 export default function Movies() {
   return (
-    <div>Movies</div>
+    <div>
+      <PageNation/>
+    </div>
   )
 }

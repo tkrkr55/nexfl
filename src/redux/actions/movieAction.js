@@ -14,6 +14,7 @@ function getMovies (){
     const topRatedApi = api.get(`/movie/top_rated?api_key=${API_KEY}&language=en-US&page=1`)
     const upcomingApi = api.get(`/movie/upcoming?api_key=${API_KEY}&language=en-US&page=1`)
     const genreApi = api.get(`/genre/movie/list?api_key=${API_KEY}&language=en-US`)
+
     let [popularMovies,topRatedMovies,upcomingMovies,genreList] = await Promise.all([popularMovieApi,topRatedApi,upcomingApi,genreApi])
     // 데이터 도착 후 Reducer에도 loading을 false로 바꿔준다.
   

@@ -19,20 +19,20 @@ export default function MovieDetail() {
   const {popularMovies,topRatedMovies,upcomingMovies,loading}=useSelector(state=>state.movie)
 
   const getMovieDetail = async()=>{
-   const result = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=en-US`).then((data)=>data.data)
+   const result = await axios.get(`/movie/${id}?api_key=${API_KEY}&language=en-US`).then((data)=>data.data)
   setdetail(result)
   console.log(result)
   }
 
   const getReviews = async ()=>{
-    const result = await axios.get(`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${API_KEY}&language=en-US&page=1`).then((data)=>data.data.results)
+    const result = await axios.get(`/movie/${id}/reviews?api_key=${API_KEY}&language=en-US&page=1`).then((data)=>data.data.results)
     setReview(result)
     console.log(review)
    
   }
 
   const getMovies = async () =>{
-    const result =  await axios.get(`https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=${API_KEY}&language=en-US&page=1`).then((data)=>data.data.results)
+    const result =  await axios.get(`/movie/${id}/recommendations?api_key=${API_KEY}&language=en-US&page=1`).then((data)=>data.data.results)
     console.log(result)
     setMovices(result)
   }
